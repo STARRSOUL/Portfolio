@@ -74,9 +74,9 @@ function Navbar({ menuOpen, setMenuOpen }) {
             </ul>
 
             <div className="flex gap-4 mt-4">
-              <i className="bi bi-linkedin text-xl hover:text-red-400 cursor-pointer transition"></i>
-              <i className="bi bi-github text-xl hover:text-red-400 cursor-pointer transition"></i>
-              <i className="bi bi-twitter-x text-xl hover:text-red-400 cursor-pointer transition"></i>
+              <a href={Linkedin}><i className="bi bi-linkedin text-xl hover:text-red-400 cursor-pointer transition"></i></a>
+              <a href={Github}><i className="bi bi-github text-xl hover:text-red-400 cursor-pointer transition"></i></a>
+              <a href={Twitter}><i className="bi bi-twitter-x text-xl hover:text-red-400 cursor-pointer transition"></i></a>
             </div>
           </div>
         )}
