@@ -290,7 +290,7 @@ html, body{
  
  
 }
-@media(max-width: 428px) {
+@media(max-width: 435px) {
   .hero-bottom-title::after{
     font-size: 7rem;
     left: 47%;
@@ -311,11 +311,11 @@ html, body{
   height: 330px;
  }
  .marquee-box{
-  gap:150px;
-  top:150%;
+  
+  top:700px;
  }
  .marquee_fix{
-  top:900px  !important;
+  top:1000px  !important;
 }
 }
 
@@ -559,4 +559,5 @@ html, body{
     text-align: center;
   }
 }
+
 

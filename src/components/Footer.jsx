@@ -40,7 +40,7 @@ function Footer() {
           </h2>
 
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-20">
-            <h2 className="text-5xl sm:text-4xl md:text-5xl font-extrabold text-[var(--primary-color)] drop-shadow-[0_0_15px_var(--primary-color)] leading-tight tracking-tight">
+            <h2 className="text-4xl sm:text-4xl md:text-5xl font-extrabold text-[var(--primary-color)] drop-shadow-[0_0_15px_var(--primary-color)] leading-tight tracking-tight">
               {splitText("Mail Me!")}
             </h2>
             <form
@@ -70,7 +70,7 @@ function Footer() {
               </button>
             </form>
           </div>
-          <div className="text-base text-green-500 mt-4"></div>
+
         </div>
       </section>
 
