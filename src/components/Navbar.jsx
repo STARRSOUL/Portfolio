@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 
 function Navbar({ menuOpen, setMenuOpen }) {
   
+  const Ig = "https://www.instagram.com/anuragp.30?utm_source=qr&igsh=MTdwamtheXJpajg4Mw==";
+  const Linkedin = "https://www.linkedin.com/in/anurag-parashar-275183224";
+  const Github = "https://github.com/STARRSOUL";
+  const Twitter = "https://x.com/Anurag1Parashar";
 
   return (
     <>
@@ -35,9 +39,9 @@ function Navbar({ menuOpen, setMenuOpen }) {
           </div>
 
           <div className="hidden md:flex gap-4 text-sm font-light">
-            <i className="bi bi-linkedin text-xl hover:text-red-400 cursor-pointer transition"></i>
-            <i className="bi bi-github text-xl hover:text-red-400 cursor-pointer transition"></i>
-            <i className="bi bi-twitter-x text-xl hover:text-red-400 cursor-pointer transition"></i>
+            <a href={Linkedin}><i href={Linkedin} className="bi bi-linkedin text-xl hover:text-red-400 cursor-pointer transition"></i></a>
+            <a href={Github}><i className="bi bi-github text-xl hover:text-red-400 cursor-pointer transition"></i></a>
+            <a href={Twitter}><i className="bi bi-twitter-x text-xl hover:text-red-400 cursor-pointer transition"></i></a>
           </div>
 
           <div className="md:hidden">
