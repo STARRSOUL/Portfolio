@@ -19,6 +19,9 @@ import slideImg2 from "../assets/slide-icon-2.png";
 import slideImg3 from "../assets/slide-icon-3.png";
 import slideImg4 from "../assets/slide-icon-4.png";
 import slideImg5 from "../assets/slide-icon-5.png";
+import slideImg6 from "../assets/slide-icon-6.png";
+import slideImg7 from "../assets/slide-icon-7.png";
+
 import "../index.css";
 import "../App.css";
 
@@ -105,52 +108,52 @@ function Index({ menuOpen }) {
         <marquee behavior="alternate" direction="">
           <div className="marquee-content flex flex-row gap-[200px]">
             <div className="flex items-center gap-3 ">
-              <img src={slideImg1} className="w-20 h-20 invert " alt="" />
+              <img src={slideImg6} className="w-20 h-20 invert " alt="" />
               <div>
-                <h2 className="text-4xl">Connectivity</h2>
-                <p className="text-md">Collab With Others</p>
+                <h2 className="text-4xl">Data & AI</h2>
+                <p className="text-md">ML Models That Predict</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 ">
+              <img src={slideImg7} className="w-20 h-20 invert " alt="" />
+              <div>
+                <h2 className="text-4xl">Innovation First</h2>
+                <p className="text-md">From Idea to Impact</p>
               </div>
             </div>
             <div className="flex items-center gap-3 ">
               <img src={slideImg1} className="w-20 h-20 invert " alt="" />
               <div>
-                <h2 className="text-4xl">Connectivity</h2>
-                <p className="text-md">Collab With Others</p>
-              </div>
-            </div>
-            <div className="flex items-center gap-3 ">
-              <img src={slideImg1} className="w-20 h-20 invert " alt="" />
-              <div>
-                <h2 className="text-4xl">Connectivity</h2>
-                <p className="text-md">Collab With Others</p>
+                <h2 className="text-4xl">Full-Stack Developer</h2>
+                <p className="text-md">React | Node | Django</p>
               </div>
             </div>
             <div className="flex items-center gap-3 ">
               <img src={slideImg2} className="w-20 h-20 invert " alt="" />
               <div>
-                <h2 className="text-4xl">Connectivity</h2>
-                <p className="text-md">Collab With Others</p>
+                <h2 className="text-4xl">Collaboration</h2>
+                <p className="text-md">Agile Team Player</p>
               </div>
             </div>
             <div className="flex items-center gap-3 ">
               <img src={slideImg3} className="w-20 h-20 invert " alt="" />
               <div>
-                <h2 className="text-4xl">Connectivity</h2>
-                <p className="text-md">Collab With Others</p>
+                <h2 className="text-4xl">Dream → Deploy</h2>
+                <p className="text-md">From Vision to Reality</p>
               </div>
             </div>
             <div className="flex items-center gap-3 ">
               <img src={slideImg4} className="w-20 h-20 invert " alt="" />
               <div>
-                <h2 className="text-4xl">Connectivity</h2>
-                <p className="text-md">Collab With Others</p>
+                <h2 className="text-4xl">Certified Skills</h2>
+                <p className="text-md">AWS | Data Mining</p>
               </div>
             </div>
             <div className="flex items-center gap-3 ">
               <img src={slideImg5} className="w-20 h-20 invert " alt="" />
               <div>
-                <h2 className="text-4xl">Connectivity</h2>
-                <p className="text-md">Collab With Others</p>
+                <h2 className="text-4xl">Bluestock Journey</h2>
+                <p className="text-md">Scalable IPO Platform</p>
               </div>
             </div>
           </div>
