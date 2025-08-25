@@ -34,8 +34,8 @@ function Navbar({ menuOpen, setMenuOpen }) {
             </li>
           </ul>
 
-          <div className="text-4xl font-bricolage font-bold cursor-pointer tracking-wide">
-            <span className="text-red-400">Star</span>Soul
+          <div className="text-4xl font-bricolage font-bold cursor-pointer tracking-wide h-10 w-10">
+            <img src="/Logo Portfolio.png" alt="Logo"  />
           </div>
 
           <div className="hidden md:flex gap-4 text-sm font-light">
