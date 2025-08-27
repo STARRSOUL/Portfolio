@@ -5,7 +5,7 @@ import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
 import CountUp from "react-countup";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, EffectCoverflow, Keyboard } from "swiper/modules";
+import { Autoplay, EffectCoverflow } from "swiper/modules";
 import "swiper/css/effect-coverflow";
 import "swiper/css";
 import "aos/dist/aos.css";
@@ -71,7 +71,7 @@ function Index({ menuOpen }) {
       <span className="bg-elm fixed top-0 left-[50%] h-[100vh] w-[1px]  bg-[--thin-border] z-[1] "></span>
       <span className="bg-elm fixed top-0 left-[80%] h-[100vh] w-[1px]  bg-[--thin-border] z-[1] "></span>
       {/* Hero Section */}
-      <div className="lg:px-[12%] px-[8%] py-[150px] pt-0 hero" id="home" >
+      <div className="lg:px-[12%] px-[8%] py-[150px] pt-0 hero" id="home">
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="flex-1 text-white rounded-lg pt-[150px] hero-content">
             <div className="flex flex-col justify-between h-[250px] hero-content-box">
@@ -163,141 +163,184 @@ function Index({ menuOpen }) {
 
       {/*Title Section of Projects */}
       <div className="relative text-center w-full py-[88px] pt-0" id="projects">
-        <span className="section-subtitle py-1 px-3 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal md-6">
-          My Projects
-        </span>
-
         <Splide
           options={{
             type: "loop",
-            drag: false,
-            arrow: false,
-            pagination: false,
+            drag: true,
+            arrow: true,
+            pagination: true,
             autoScroll: {
               speed: 1.5,
               pauseOnHover: true,
               pauseOnFocus: true,
             },
+            keyboard: 'global',
           }}
-          extensions={{ AutoScroll }}
+          extensions={{ AutoScroll}}
           className="w-full"
           aria-label="Smooth Scrolling Work Slider"
         >
           <SplideSlide>
             <div className="section-title"> My Projects </div>
+            <div className="projects w-full lg:px-[12%] px-[8%] pb-[150px] md:pt-[50px]">
+              <div className="project-item w-full h-full">
+                <div className="project-image border border-[#393939] bg-[#161616] rounded-xl">
+                  <div className="p-image rounded-xl overflow-hidden h-[200px] bg-gray-800">
+                    <img
+                      src={project1}
+                      alt="CineList App"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="project-arrow">
+                    <a
+                      href="https://cinelistapp.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        xmlns="https://www.w3.org/2000/svg"
+                        viewBox="0 0 100 100"
+                      >
+                        <path d="M99.5,19v80.5H73.1V45.4L19,99.5L0,81l54.1-54.1H0.5V0.5H81L99.5,19z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div className="project-content text-white pt-5">
+                  <h3 className="text-3xl font-bold pb-2">CineList App</h3>
+                  <p className="text-[#a2a2a2] w-full ">
+                    A movie listing web app with search, trending, and
+                    favorites. Built with React and OMDB API.
+                  </p>
+                </div>
+              </div>
+            </div>
           </SplideSlide>
           <SplideSlide>
             <div className="section-title"> My Projects </div>
+
+            <div className="projects w-full lg:px-[12%] px-[8%] pb-[150px] md:pt-[50px]">
+              <div className="project-item w-full h-full">
+                <div className="project-image border border-[#393939] bg-[#161616] rounded-xl">
+                  <div className="p-image rounded-xl overflow-hidden h-[200px] bg-gray-800">
+                    <img
+                      src={project2}
+                      alt="Laptop Price Predictor"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="project-arrow">
+                    <a
+                      href="https://github.com/STARRSOUL/Laptop-Price-Predictor"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        xmlns="https://www.w3.org/2000/svg"
+                        viewBox="0 0 100 100"
+                      >
+                        <path d="M99.5,19v80.5H73.1V45.4L19,99.5L0,81l54.1-54.1H0.5V0.5H81L99.5,19z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div className="project-content text-white pt-5">
+                  <h3 className="text-3xl font-bold pb-2">
+                    Laptop Price Predictor
+                  </h3>
+                  <p className="text-[#a2a2a2] w-full ">
+                    A platform to predict laptop prices based on specifications.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </SplideSlide>
+           <SplideSlide>
+            <div className="section-title"> My Projects </div>
+            <div className="projects w-full lg:px-[12%] px-[8%] pb-[150px] md:pt-[50px]">
+              <div className="project-item w-full h-full">
+                <div className="project-image border border-[#393939] bg-[#161616] rounded-xl">
+                  <div className="p-image rounded-xl overflow-hidden h-[200px] bg-gray-800">
+                    <img
+                      src={project1}
+                      alt="CineList App"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="project-arrow">
+                    <a
+                      href="https://cinelistapp.netlify.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        xmlns="https://www.w3.org/2000/svg"
+                        viewBox="0 0 100 100"
+                      >
+                        <path d="M99.5,19v80.5H73.1V45.4L19,99.5L0,81l54.1-54.1H0.5V0.5H81L99.5,19z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div className="project-content text-white pt-5">
+                  <h3 className="text-3xl font-bold pb-2">CineList App</h3>
+                  <p className="text-[#a2a2a2] w-full ">
+                    A movie listing web app with search, trending, and
+                    favorites. Built with React and OMDB API.
+                  </p>
+                </div>
+              </div>
+            </div>
           </SplideSlide>
           <SplideSlide>
             <div className="section-title"> My Projects </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="section-title"> My Projects </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="section-title"> My Projects </div>
-          </SplideSlide>
-          <SplideSlide>
-            <div className="section-title"> My Projects </div>
+
+            <div className="projects w-full lg:px-[12%] px-[8%] pb-[150px] md:pt-[50px]">
+              <div className="project-item w-full h-full">
+                <div className="project-image border border-[#393939] bg-[#161616] rounded-xl">
+                  <div className="p-image rounded-xl overflow-hidden h-[200px] bg-gray-800">
+                    <img
+                      src={project2}
+                      alt="Laptop Price Predictor"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="project-arrow">
+                    <a
+                      href="https://github.com/STARRSOUL/Laptop-Price-Predictor"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        xmlns="https://www.w3.org/2000/svg"
+                        viewBox="0 0 100 100"
+                      >
+                        <path d="M99.5,19v80.5H73.1V45.4L19,99.5L0,81l54.1-54.1H0.5V0.5H81L99.5,19z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <div className="project-content text-white pt-5">
+                  <h3 className="text-3xl font-bold pb-2">
+                    Laptop Price Predictor
+                  </h3>
+                  <p className="text-[#a2a2a2] w-full ">
+                    A platform to predict laptop prices based on specifications.
+                  </p>
+                </div>
+              </div>
+            </div>
           </SplideSlide>
         </Splide>
       </div>
-      {/* Projects Section */}
-      <div className="projects w-full lg:px-[12%] px-[8%] pb-[150px] md:pt-[50px]">
-        <Swiper
-          effect={"coverflow"}
-          grabCursor={false}
-          centeredSlides={true}
-          loop={true}
-          slidesPerView={"auto"}
-          coverflowEffect={{
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-          }}
-          keyboard={{
-            enabled: true,
-          }}
-          modules={[EffectCoverflow, Keyboard]}
-          className="w-full project-swiper"
-        >
-          <SwiperSlide key="cinelist" className="max-w-[300px]">
-            <div className="project-item w-full h-full">
-              <div className="project-image border border-[#393939] bg-[#161616] rounded-xl">
-                <div className="p-image rounded-xl overflow-hidden h-[200px] bg-gray-800">
-                  <img
-                    src={project1}
-                    alt="CineList App"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="project-arrow">
-                  <a
-                    href="https://cinelistapp.netlify.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <svg
-                      xmlns="https://www.w3.org/2000/svg"
-                      viewBox="0 0 100 100"
-                    >
-                      <path d="M99.5,19v80.5H73.1V45.4L19,99.5L0,81l54.1-54.1H0.5V0.5H81L99.5,19z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div className="project-content text-white pt-5">
-                <h3 className="text-3xl font-bold pb-2">CineList App</h3>
-                <p className="text-[#a2a2a2] w-full lg:w-[50%]">
-                  A movie listing web app with search, trending, and favorites.
-                  Built with React and OMDB API.
-                </p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide key="Laptop-predictor" className="max-w-[300px]">
-            <div className="project-item w-full h-full">
-              <div className="project-image border border-[#393939] bg-[#161616] rounded-xl">
-                <div className="p-image rounded-xl overflow-hidden h-[200px] bg-gray-800">
-                  <img
-                    src={project2}
-                    alt="Laptop Price Predictor"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="project-arrow">
-                  <a
-                    href="https://github.com/STARRSOUL/Laptop-Price-Predictor"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <svg
-                      xmlns="https://www.w3.org/2000/svg"
-                      viewBox="0 0 100 100"
-                    >
-                      <path d="M99.5,19v80.5H73.1V45.4L19,99.5L0,81l54.1-54.1H0.5V0.5H81L99.5,19z" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div className="project-content text-white pt-5">
-                <h3 className="text-3xl font-bold pb-2">
-                  Laptop Price Predictor
-                </h3>
-                <p className="text-[#a2a2a2] w-full lg:w-[50%]">
-                  A platform to predict laptop prices based on specifications.
-                </p>
-              </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
+     
 
       {/*info*/}
-      <div className="text-white font-[var(--Bricolage-font)] px-[8%] lg:px-[12%] py-20 grid grid-cols-1 lg:grid-cols-2 gap-14 relative z-5" id="skills">
+      <div
+        className="text-white font-[var(--Bricolage-font)] px-[8%] lg:px-[12%] py-20 grid grid-cols-1 lg:grid-cols-2 gap-14 relative z-5"
+        id="skills"
+      >
         <div className="flex flex-col w-full gap-3">
           <div className="bg-[#1a1a1a] border border-gray-700 rounded-2xl p-6 backdrop-blur-sm shadow-[0_0_25px_#ec463426]">
             <h4 className="text-sm text-gray-400 mb-5">My Career Growth</h4>
@@ -370,12 +413,15 @@ function Index({ menuOpen }) {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.3690958095594!2d80.03671387372908!3d12.81940931819939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f76c4db87a47%3A0x341fa471f8027d68!2sSRM%20University%2C%20Kattankulathur%2C%20Tamil%20Nadu%20603203!5e0!3m2!1sen!2sin!4v1756035871719!5m2!1sen!2sin"
                 frameborder="0"
               ></iframe>
-             </div>
+            </div>
 
             <div className="bg-[#1a1a1a] p-2 border border-gray-700 rounded-2xl  text-center flex flex-col items-center justify-center shadow-[0_0_25px_#ec463426] contain-content gap-2">
               <img src={mailIcon} alt="" className="w-[40%] h-[40%]" />
 
-              <a href="mailto:anuragprasher7@gmail.com" className="text-white  text-xs md:text-sm  contain-content">
+              <a
+                href="mailto:anuragprasher7@gmail.com"
+                className="text-white  text-xs md:text-sm  contain-content"
+              >
                 anuragprasher7@gmail.com
               </a>
             </div>
@@ -426,7 +472,10 @@ function Index({ menuOpen }) {
         </div>
       </div>
       {/*Title Section of Testimonial */}
-      <div className="relative text-center w-full py-[88px] pt-0" id="testimonials">
+      <div
+        className="relative text-center w-full py-[88px] pt-0"
+        id="testimonials"
+      >
         <span className="section-subtitle py-1 px-3 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal md-6">
           What They Express
         </span>
