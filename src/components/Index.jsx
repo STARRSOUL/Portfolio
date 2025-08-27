@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Navbar from "./Navbar";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import "@splidejs/react-splide/css";
@@ -70,7 +71,7 @@ function Index({ menuOpen }) {
       <span className="bg-elm fixed top-0 left-[50%] h-[100vh] w-[1px]  bg-[--thin-border] z-[1] "></span>
       <span className="bg-elm fixed top-0 left-[80%] h-[100vh] w-[1px]  bg-[--thin-border] z-[1] "></span>
       {/* Hero Section */}
-      <div className="lg:px-[12%] px-[8%] py-[150px] pt-0 hero">
+      <div className="lg:px-[12%] px-[8%] py-[150px] pt-0 hero" id="home" >
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="flex-1 text-white rounded-lg pt-[150px] hero-content">
             <div className="flex flex-col justify-between h-[250px] hero-content-box">
@@ -161,7 +162,7 @@ function Index({ menuOpen }) {
       </div>
 
       {/*Title Section of Projects */}
-      <div className="relative text-center w-full py-[88px] pt-0">
+      <div className="relative text-center w-full py-[88px] pt-0" id="projects">
         <span className="section-subtitle py-1 px-3 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal md-6">
           My Projects
         </span>
@@ -296,7 +297,7 @@ function Index({ menuOpen }) {
       </div>
 
       {/*info*/}
-      <div className="text-white font-[var(--Bricolage-font)] px-[8%] lg:px-[12%] py-20 grid grid-cols-1 lg:grid-cols-2 gap-14 relative z-5">
+      <div className="text-white font-[var(--Bricolage-font)] px-[8%] lg:px-[12%] py-20 grid grid-cols-1 lg:grid-cols-2 gap-14 relative z-5" id="skills">
         <div className="flex flex-col w-full gap-3">
           <div className="bg-[#1a1a1a] border border-gray-700 rounded-2xl p-6 backdrop-blur-sm shadow-[0_0_25px_#ec463426]">
             <h4 className="text-sm text-gray-400 mb-5">My Career Growth</h4>
@@ -425,7 +426,7 @@ function Index({ menuOpen }) {
         </div>
       </div>
       {/*Title Section of Testimonial */}
-      <div className="relative text-center w-full py-[88px] pt-0">
+      <div className="relative text-center w-full py-[88px] pt-0" id="testimonials">
         <span className="section-subtitle py-1 px-3 text-[#ec4634] inline-block border border-[#393939] bg-[#161616] rounded-full text-sm font-normal md-6">
           What They Express
         </span>

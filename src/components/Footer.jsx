@@ -1,5 +1,6 @@
 import React from "react";
 import "../index.css";
+import Navbar from "./Navbar";
 
 
 
@@ -33,7 +34,7 @@ function Footer() {
     ));
   return (
     <>
-      <section className="bg-[var(--body-color)] text-[var(--text-color)] font-[var(--Plus-Jakarta-font)] py-28 lg:px-[12%] px-[8%]">
+      <section className="bg-[var(--body-color)] text-[var(--text-color)] font-[var(--Plus-Jakarta-font)] py-28 lg:px-[12%] px-[8%]" id="contact">
         <div className=" mx-auto space-y-16 footer-input text-center lg:text-left">
           <h2 className="text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight tracking-tight">
             Let&apos;s Work Together

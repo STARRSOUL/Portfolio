@@ -18,19 +18,19 @@ function Navbar({ menuOpen, setMenuOpen }) {
         <div className="flex item-center justify-between transition">
           <ul className="hidden md:flex gap-6 text-sm font-light">
             <li className="font-semibold text-lg text-red-500 cursor-pointer">
-              Home
+               <a href="#home">Home</a>
             </li>
             <li className="font-semibold transition text-lg hover:text-red-400 cursor-pointer">
-              About
+             <a href="#projects">Projects</a>
             </li>
             <li className="font-semibold transition text-lg hover:text-red-400 cursor-pointer">
-              Projects
+              <a href="#skills">Skills</a>
             </li>
             <li className="font-semibold transition text-lg hover:text-red-400 cursor-pointer">
-              Skills
+              <a href="#testimonials">Testimonials</a>
             </li>
             <li className="font-semibold transition text-lg hover:text-red-400 cursor-pointer">
-              Contact
+              <a href="#contact">Contact</a>
             </li>
           </ul>
 
@@ -56,20 +56,20 @@ function Navbar({ menuOpen, setMenuOpen }) {
         {menuOpen && (
           <div className="md:hidden mt-4 flex flex-col gap-4 text-sm font-light z-[9999]">
             <ul className="flex flex-col gap-4">
-              <li className="font-semibold text-lg text-red-500 cursor-pointer">
-                Home
+              <li className="font-semibold text-lg text-red-500 cursor-pointer" >
+               <a href="#home">Home</a>
               </li>
               <li className="font-semibold transition text-lg hover:text-red-400 cursor-pointer">
-                About
+                <a href="#projects">Projects</a>
               </li>
               <li className="font-semibold transition text-lg hover:text-red-400 cursor-pointer">
-                Projects
+                <a href="#skills">Skills</a>
               </li>
               <li className="font-semibold transition text-lg hover:text-red-400 cursor-pointer">
-                Skills
+                <a href="#testimonials">Testimonials</a>
               </li>
               <li className="font-semibold transition text-lg hover:text-red-400 cursor-pointer">
-                Contact
+                <a href="#contact">Contact</a>
               </li>
             </ul>
 
