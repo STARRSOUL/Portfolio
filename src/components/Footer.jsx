@@ -1,6 +1,7 @@
 import React from "react";
 import "../index.css";
 import Navbar from "./Navbar";
+import Index from "./Index";
 
 
 
@@ -20,7 +21,7 @@ function Footer() {
 ];
 
  
-
+const SectionID = ["home", "skills", "projects", "contact"];
 
   const splitText = (text) =>
     text.split("").map((char, index) => (
@@ -99,11 +100,12 @@ function Footer() {
             </div>
             {/*MENU*/}
             <div className="text-[1rem] sm:text-[1.2rem] flex flex-row gap-2 text-gray-300">
-              {["Home", "About Me", "Projects", "Contact"].map(
+              { 
+              ["Home", "Skills", "Projects", "Contact"].map(
                 (item, index, arr) => (
                   <React.Fragment key={item}>
                     <span className="hover:text-[var(--primary-color)] cursor-pointer transition-colors duration-300">
-                      {item}
+                      <a href={`#${SectionID[index]}`}>{item}</a>
                     </span>
                     {index < arr.length - 1 && <span>/</span>}
                   </React.Fragment>
