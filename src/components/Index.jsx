@@ -462,7 +462,7 @@ function Index({ menuOpen }) {
                 Download My Resume
               </h3>
             </div>
-            <a href="/Anurag Parashar.pdf" download>
+            <a href="/Anurag Parashar resume (3).pdf" download>
               <div className="text-[#ec4634] shadow-[0_0_25px_#ec463440] text-2xl h-[50px] w-[50px] flex justify-center items-center rounded-full border border-[#ec4634] hover:bg-[#ec4634] hover:text-white transition duration-300 cursor-pointer ">
                 <i className="ri-download-2-line"></i>
               </div>
