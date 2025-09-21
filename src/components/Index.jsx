@@ -56,7 +56,6 @@ function Index({ menuOpen }) {
     "Impact",
     "Innovation",
     "collaboration",
-
     "development",
     "creativity",
     "innovation",
